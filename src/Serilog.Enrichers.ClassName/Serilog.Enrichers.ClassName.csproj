@@ -16,15 +16,14 @@
 	<PropertyGroup>
 		<Authors>Matt Janda</Authors>
 		<PackageIcon>icon.png</PackageIcon>
-		<!-- <PackageLicenseFile>LICENSE</PackageLicenseFile> -->
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageId>Serilog.Enrichers.ClassName</PackageId>
 		<AssemblyName>Serilog.Enrichers.ClassName</AssemblyName>
 		<RootNamespace>Serilog.Enrichers.ClassName</RootNamespace>
 		<Description>Enrich with ClassName created from SourceContext</Description>
 		<PackageTags>serilog enricher classname class name only</PackageTags>
-		<RepositoryUrl>https://github.com/Jandini/Serilog.Enrichers.ClassName</RepositoryUrl>
-		<PackageProjectUrl>https://github.com/Jandini/Serilog.Enrichers.ClassName</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Jandini/serilog-enrichers-classname</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/Jandini/serilog-enrichers-classname</PackageProjectUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
