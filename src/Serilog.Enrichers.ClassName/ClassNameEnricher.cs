@@ -12,7 +12,7 @@ namespace Serilog.Enrichers.ClassName
 
             if (logEvent.Properties.TryGetValue("SourceContext", out var value))
             {
-                var source = value.ToString().Split('.').Last();
+                var source = value.ToString("l", null).Split('.').Last();
 
                 logEvent.AddPropertyIfAbsent(propertyFactory.CreateProperty("ClassName", source));
             }
