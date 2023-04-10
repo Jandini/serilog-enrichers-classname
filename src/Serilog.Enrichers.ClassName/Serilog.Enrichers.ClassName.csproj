@@ -16,7 +16,8 @@
 	<PropertyGroup>
 		<Authors>Matt Janda</Authors>
 		<PackageIcon>icon.png</PackageIcon>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<!-- <PackageLicenseFile>LICENSE</PackageLicenseFile> -->
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageId>Serilog.Enrichers.ClassName</PackageId>
 		<AssemblyName>Serilog.Enrichers.ClassName</AssemblyName>
 		<RootNamespace>Serilog.Enrichers.ClassName</RootNamespace>
