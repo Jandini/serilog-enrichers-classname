@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D12BECA3-8DFB-48E5-9430-3C060D774BD6}") = "Serilog.Enrichers.ClassName", "Serilog.Enrichers.ClassName\Serilog.Enrichers.ClassName.csproj", "{C7AF6148-7DAC-41C4-8CC6-A2B68404BDE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7AF6148-7DAC-41C4-8CC6-A2B68404BDE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7AF6148-7DAC-41C4-8CC6-A2B68404BDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7AF6148-7DAC-41C4-8CC6-A2B68404BDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7AF6148-7DAC-41C4-8CC6-A2B68404BDE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38F4958C-041C-4569-AA5F-803CDAE0D651}
+	EndGlobalSection
+EndGlobal

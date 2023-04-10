@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<BaseOutputPath>..\..\bin</BaseOutputPath>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>10</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>Matt Janda</Authors>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageId>Serilog.Enrichers.ClassName</PackageId>
+		<AssemblyName>Serilog.Enrichers.ClassName</AssemblyName>
+		<RootNamespace>Serilog.Enrichers.ClassName</RootNamespace>
+		<Description>Enrich with ClassName created from SourceContext</Description>
+		<PackageTags>serilog enricher classname class name only</PackageTags>
+		<RepositoryUrl>https://github.com/Jandini/Serilog.Enrichers.ClassName</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/Jandini/Serilog.Enrichers.ClassName</PackageProjectUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\icon.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  	<PackageReference Include="Serilog" Version="2.12.0" />
+		<PackageReference Include="GitVersion.MsBuild" Version="5.12.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+</Project>
