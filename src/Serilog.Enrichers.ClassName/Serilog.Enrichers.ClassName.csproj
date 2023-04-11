@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.1</TargetFramework>
+		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
 		<BaseOutputPath>..\..\bin</BaseOutputPath>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
@@ -17,6 +17,7 @@
 		<Authors>Matt Janda</Authors>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>		
 		<PackageId>Serilog.Enrichers.ClassName</PackageId>
 		<AssemblyName>Serilog.Enrichers.ClassName</AssemblyName>
 		<RootNamespace>Serilog.Enrichers.ClassName</RootNamespace>
@@ -27,14 +28,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\..\icon.png">
-			<Pack>True</Pack>
-			<PackagePath></PackagePath>
-		</None>
-		<None Include="..\..\LICENSE">
-			<Pack>True</Pack>
-			<PackagePath></PackagePath>
-		</None>
+		<None Include="..\..\icon.png" Pack="true" PackagePath=""/>
+		<None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 	<ItemGroup>
