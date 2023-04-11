@@ -20,12 +20,12 @@ internal static IServiceCollection AddLogging(this IServiceCollection services, 
 }
 ```   
 
-or add `"Using": [ "Serilog.Enrichers.ClassName" ],` and `"Enrich": [ "WithClassName" ]` to `appsettings.json` file
+or add `"Enrich": [ "WithClassName" ]` to `appsettings.json` file
 
 ```json
 {
   "Serilog": {
-    "Using": [ "Serilog.Sinks.Console", "Serilog.Enrichers.Environment", "Serilog.Enrichers.ClassName" ],
+    "Using": [ "Serilog.Sinks.Console", "Serilog.Enrichers.Environment" ],
     "MinimumLevel": "Information",
     "Enrich": [ "WithMachineName", "WithClassName" ],
     "WriteTo": [
@@ -40,6 +40,8 @@ or add `"Using": [ "Serilog.Enrichers.ClassName" ],` and `"Enrich": [ "WithClass
   }
 }
 ```
+
+Note: Since serilog can automatically find the enricher adding `"Using": [ "Serilog.Enrichers.ClassName" ]` is not required.  
 
 ---
 Created from [JandaBox](https://github.com/Jandini/JandaBox)
