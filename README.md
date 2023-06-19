@@ -41,8 +41,21 @@ or add `"Enrich": [ "WithClassName" ]` to `appsettings.json` file
 }
 ```
 
-Note: Since serilog can automatically find the enricher adding `"Using": [ "Serilog.Enrichers.ClassName" ]` is not required.  
+Note: Since serilog can automatically find the enricher adding `"Using": [ "Serilog.Enrichers.ClassName" ]` is not required. You must add if you use use `-p:PublishSingleFile=true`.
 
+### Publish you application as single file 
+
+When publishing application with `-p:PublishSingleFile=true` you must include `"Using": [ "Serilog.Enrichers.ClassName" ]` in appsettings.json.
+Without this the enricher will not be loaded and the value will be empty.
+For example: 
+```json
+{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.File", "Serilog.Enrichers.Environment", "Serilog.Enrichers.ClassName" ],
+    ...
+  }
+}
+```
 ---
 Created from [JandaBox](https://github.com/Jandini/JandaBox)
 
