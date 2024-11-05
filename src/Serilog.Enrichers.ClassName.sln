@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Enrichers.ClassName", "Serilog.Enrichers.ClassName\Serilog.Enrichers.ClassName.csproj", "{C7AF6148-7DAC-41C4-8CC6-A2B68404BDE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Enrichers.ClassName.Tests", "Serilog.Enrichers.ClassName.Tests\Serilog.Enrichers.ClassName.Tests.csproj", "{1964BEA8-3030-4E02-AD97-87D65E16157A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Enrichers.ClassName.Tests", "Serilog.Enrichers.ClassName.Tests\Serilog.Enrichers.ClassName.Tests.csproj", "{1964BEA8-3030-4E02-AD97-87D65E16157A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Enrichers.ClassName.Demo", "Serilog.Enrichers.ClassName.Demo\Serilog.Enrichers.ClassName.Demo.csproj", "{B92B7663-6086-44DA-B1FE-ACEFF082D8CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1964BEA8-3030-4E02-AD97-87D65E16157A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1964BEA8-3030-4E02-AD97-87D65E16157A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1964BEA8-3030-4E02-AD97-87D65E16157A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B92B7663-6086-44DA-B1FE-ACEFF082D8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B92B7663-6086-44DA-B1FE-ACEFF082D8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B92B7663-6086-44DA-B1FE-ACEFF082D8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B92B7663-6086-44DA-B1FE-ACEFF082D8CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
