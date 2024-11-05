@@ -4,19 +4,25 @@ using Serilog;
 using Serilog.Enrichers.ClassName;
 using SerilogDemo;
 
+namespace Demo;
 
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Debug()
-    .Enrich.WithClassName()
-    .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] [{ClassName}] [{SourceContext}] {Message:lj}{NewLine}{Exception}")
-    .CreateLogger();
+class MyProgram
+{
+    public static void Main(string[] args)
+    {
+        Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Debug()
+            .Enrich.WithClassName()
+            .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] [{ClassName}] [{SourceContext}] {Message:lj}{NewLine}{Exception}")
+            .CreateLogger();
 
-    Log.Information("Application starting...");
+        Log.Information("Application starting...");
 
-// Log from another class
-var demoClass = new DemoClass();
-    demoClass.DoWork();
+        // Log from another class
+        var demoClass = new DemoClass();
+        demoClass.DoWork();
 
-Log.Information("Application ending...");
-Log.CloseAndFlush();
-    
+        Log.Information("Application ending...");
+        Log.CloseAndFlush();
+    }
+}
