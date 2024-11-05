@@ -2,6 +2,7 @@
 
 [![Build](https://github.com/Jandini/serilog-enrichers-classname/actions/workflows/build.yml/badge.svg)](https://github.com/Jandini/serilog-enrichers-classname/actions/workflows/build.yml)
 [![NuGet](https://github.com/Jandini/serilog-enrichers-classname/actions/workflows/nuget.yml/badge.svg)](https://github.com/Jandini/serilog-enrichers-classname/actions/workflows/nuget.yml)
+[![NuGet Version](http://img.shields.io/nuget/v/Serilog.Enrichers.ClassName?style=flat&label=Version)](https://www.nuget.org/packages/Serilog.Enrichers.ClassName/)
 
 Enrich Serilog logs with class name only.
 
