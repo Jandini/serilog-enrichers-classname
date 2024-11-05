@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Configure Serilog with SourceContext
 using Serilog;
-using Serilog.Enrichers.ClassName;
 using SerilogDemo;
 
 namespace Demo;
